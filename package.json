@@ -1,0 +1,57 @@
+{
+  "name": "grunt-styledoc",
+  "description": "Grunt wrapper for styledoc: parser and showcase generator for JavaDoc-like comments in CSS, LESS, SASS etc.",
+  "version": "0.0.1",
+  "homepage": "https://github.com/thybzi/grunt-styledoc",
+  "author": {
+    "name": "Evgeni Dmitriev",
+    "email": "thybzi@gmail.com",
+    "url": "http://www.thybzi.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thybzi/grunt-styledoc.git"
+  },
+  "bugs": {
+    "url": "https://github.com/thybzi/grunt-styledoc/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/thybzi/grunt-styledoc/blob/master/LICENSE-MIT"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "dependencies": {
+    "styledoc": "^0.0.4"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "^0.9.2",
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-contrib-nodeunit": "^0.3.3",
+    "grunt": "~0.4.5"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.5"
+  },
+  "keywords": [
+    "gruntplugin",
+    "styledoc",
+    "cssdoc",
+    "docblock",
+    "documentor",
+    "showcase",
+    "presentation",
+    "generator",
+    "css",
+    "less",
+    "sass",
+    "scss",
+    "stylus"
+  ]
+}
