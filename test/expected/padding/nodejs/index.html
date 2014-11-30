@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>StyleDoc :: Example 1 :: FS&#x2F;NodeJS + PhantomJS showcase</title>
+    <title>StyleDoc :: Example 1 :: FS&#x2F;NodeJS showcase</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="main.css">
 </head>
@@ -43,7 +43,7 @@
     <div class="main">
 
         <a id="top"></a>
-            <h1>StyleDoc :: Example 1 :: FS&#x2F;NodeJS + PhantomJS showcase</h1>
+            <h1>StyleDoc :: Example 1 :: FS&#x2F;NodeJS showcase</h1>
 
 
                 <h2 id="section_1">
@@ -62,9 +62,9 @@
                         </h3>
                         <div class="description">Normal button</div>
                         <iframe id="preview_button" src="preview/button.html"
-                            style="height: 40px"
                             
-                            
+                            class="loading"
+                            onload="styledoc_iframeOnload(this)"
                             scrolling="no"></iframe>
                     
                         <pre>&lt;button&gt;Button text&lt;&#x2F;button&gt;
@@ -79,9 +79,9 @@
                         </h3>
                         <div class="description">Bright variation of button</div>
                         <iframe id="preview_button_bright" src="preview/button_bright.html"
-                            style="height: 40px"
                             
-                            
+                            class="loading"
+                            onload="styledoc_iframeOnload(this)"
                             scrolling="no"></iframe>
                     
                         <pre>&lt;button class=&quot;bright&quot;&gt;Button text&lt;&#x2F;button&gt;
@@ -96,9 +96,9 @@
                         </h3>
                         <div class="description">Large-sized button</div>
                         <iframe id="preview_button_large" src="preview/button_large.html"
-                            style="height: 52px"
                             
-                            
+                            class="loading"
+                            onload="styledoc_iframeOnload(this)"
                             scrolling="no"></iframe>
                     
                         <pre>&lt;button class=&quot;large&quot;&gt;Button text&lt;&#x2F;button&gt;
@@ -113,9 +113,9 @@
                         </h3>
                         <div class="description">Large-sized bright button</div>
                         <iframe id="preview_button_large_bright" src="preview/button_large_bright.html"
-                            style="height: 52px"
                             
-                            
+                            class="loading"
+                            onload="styledoc_iframeOnload(this)"
                             scrolling="no"></iframe>
                     
                         <pre>&lt;button class=&quot;large bright&quot;&gt;Button text&lt;&#x2F;button&gt;
@@ -142,9 +142,9 @@
                         </h3>
                         <div class="description">Normal checkbox</div>
                         <iframe id="preview_input_type__checkbox__" src="preview/input_type__checkbox__.html"
-                            style="height: 26px"
                             
-                            
+                            class="loading"
+                            onload="styledoc_iframeOnload(this)"
                             scrolling="no"></iframe>
                     
                         <pre>&lt;input type=&quot;checkbox&quot; id=&quot;unique_id&quot;&gt;
@@ -167,9 +167,9 @@
                         </h3>
                         <div class="description">Large-sized checkbox</div>
                         <iframe id="preview_input_type__checkbox___large" src="preview/input_type__checkbox___large.html"
-                            style="height: 34px"
                             
-                            
+                            class="loading"
+                            onload="styledoc_iframeOnload(this)"
                             scrolling="no"></iframe>
                     
                         <pre>&lt;input type=&quot;checkbox&quot; id=&quot;unique_id&quot; class=&quot;large&quot;&gt;
@@ -202,6 +202,11 @@
         }
     }
 
+    function styledoc_iframeOnload(iframe) {
+        setTimeout(function () {
+            styledoc_resizeIframe(iframe);
+        }, 2000);
+    }
 
     setTimeout(function () {
         window.onresize = function () {
