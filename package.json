@@ -1,7 +1,7 @@
 {
   "name": "grunt-styledoc",
   "description": "Grunt wrapper for styledoc: parser and showcase generator for JavaDoc-like comments in CSS, LESS, SASS etc.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "homepage": "https://github.com/thybzi/grunt-styledoc",
   "author": {
     "name": "Evgeni Dmitriev",
