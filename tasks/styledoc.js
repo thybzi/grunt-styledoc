@@ -40,6 +40,7 @@ module.exports = function(grunt) {
             "language",
             "doctype",
             "page_title",
+            "css_url_http",
             "iframe_delay",
             "use_phantomjs",
             "phantomjs_viewport",

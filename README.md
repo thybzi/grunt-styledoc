@@ -67,6 +67,12 @@ Default value: `""`
 
 Main title of document.
 
+#### options.css_url_http
+Type: `Sumber`
+Default value: `undefined`
+
+HTTP(S) path to CSS file to use in live preview (detected automatically by default).
+
 #### options.iframe_delay
 Type: `Number`
 Default value: `2000`
